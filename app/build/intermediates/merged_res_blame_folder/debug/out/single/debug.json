@@ -1,0 +1,126 @@
+[
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\drawable_ic_favorite.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\drawable\\ic_favorite.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\layout_activity_music_player.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\layout\\activity_music_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\layout_playlist_item.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\layout\\playlist_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\drawable_ic_library_music.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\drawable\\ic_library_music.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\layout_activity_search.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\layout\\activity_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\layout_fragment_search.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\layout\\fragment_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-pngs-28:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.musicapp-merged_res-32:/layout_activity_auth_webview.xml.flat",
+        "source": "com.example.musicapp-main-34:/layout/activity_auth_webview.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\drawable_ic_person.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\drawable\\ic_person.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\layout_fragment_liked_songs.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\layout\\fragment_liked_songs.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\layout_activity_playlist_manager.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\layout\\activity_playlist_manager.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\layout_fragment_library.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\layout\\fragment_library.xml"
+    },
+    {
+        "merged": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-merged_res-32:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\casper\\.gradle\\daemon\\9.0-milestone-1\\com.example.musicapp-main-34:\\drawable\\ic_launcher_background.xml"
+    }
+]

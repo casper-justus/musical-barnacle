@@ -1,6 +1,27 @@
 apply plugin: 'com.android.application'
 
+buildscript {
+    repositories {
+        google()        // <--- THIS IS CRUCIAL
+        mavenCentral()  // <--- AND THIS
+    }
+    dependencies {
+        // Make sure this line is present and the version is appropriate for your project
+        // Example for compileSdkVersion 34, you might be using AGP 8.1.x or 8.2.x
+        classpath 'com.android.tools.build:gradle:8.2.0' // <--- CHECK THIS LINE AND VERSION
+    }
+}
+
+allprojects {
+    repositories {
+        google()        // <--- ALSO IMPORTANT FOR OTHER DEPENDENCIES
+        mavenCentral()  // <--- AND THIS
+        // If you have other custom repositories, they can go here
+    }
+}
+
 android {
+    namespace "com.example.musicapp"
     compileSdkVersion 34
     defaultConfig {
         applicationId "com.example.musicapp"
@@ -21,6 +42,14 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
+allprojects {
+    repositories {
+        google()        // <--- ALSO IMPORTANT FOR OTHER DEPENDENCIES
+        mavenCentral()  // <--- AND THIS
+        // If you have other custom repositories, they can go here
+    }
+}
+
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'

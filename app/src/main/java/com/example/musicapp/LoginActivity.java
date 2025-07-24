@@ -4,49 +4,32 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ProgressBar;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText emailEditText;
-    private EditText passwordEditText;
-    private Button loginButton;
-    private ProgressBar loadingProgressBar;
-    private RequestQueue requestQueue;
+    private Button loginButton; // The button to initiate the login process
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_login); // Your existing layout for login
 
-        emailEditText = findViewById(R.id.email_edit_text);
-        passwordEditText = findViewById(R.id.password_edit_text);
-        loginButton = findViewById(R.id.login_button);
-        loadingProgressBar = findViewById(R.id.loading_progress_bar);
-
-        requestQueue = Volley.newRequestQueue(this);
+        loginButton = findViewById(R.id.login_button); // Assuming you have a button with this ID
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                login();
+                // When the login button is clicked, launch the AuthWebViewActivity
+                Intent intent = new Intent(LoginActivity.this, AuthWebViewActivity.class);
+                startActivity(intent);
+                // Optionally, finish LoginActivity so the user cannot navigate back to it
+                // after the WebView handles authentication.
+                // finish();
             }
         });
     }
+
 
     private void login() {
         String email = emailEditText.getText().toString().trim();
@@ -98,3 +81,7 @@ public class LoginActivity extends AppCompatActivity {
         requestQueue.add(jsonObjectRequest);
     }
 }
+
+    // You can remove any old Volley or direct API call related code from here
+    // as it's no longer used for the WebView authentication flow.
+
