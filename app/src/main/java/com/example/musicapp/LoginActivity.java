@@ -76,9 +76,9 @@ public class LoginActivity extends AppCompatActivity {
                     public void onResponse(JSONObject response) {
                         loadingProgressBar.setVisibility(View.GONE);
                         try {
-                            String sessionId = response.getJSONObject("response").getString("session_id");
-                            // TODO: Store the session ID and navigate to the main activity
+                            String token = response.getJSONObject("response").getString("jwt");
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            intent.putExtra("token", token);
                             startActivity(intent);
                             finish();
                         } catch (JSONException e) {

@@ -12,12 +12,33 @@ import com.example.musicapp.fragments.ProfileFragment;
 import com.example.musicapp.fragments.SearchFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import io.supabase.SupabaseClient;
+import io.supabase.gotrue.GoTrue;
+import io.supabase.postgrest.Postgrest;
+import io.supabase.realtime.Realtime;
+import io.supabase.storage.Storage;
+
 public class MainActivity extends AppCompatActivity {
+
+    private SupabaseClient supabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        String token = getIntent().getStringExtra("token");
+        String supabaseUrl = "YOUR_SUPABASE_URL";
+        String supabaseKey = "YOUR_SUPABASE_KEY";
+
+        supabase = new SupabaseClient(supabaseUrl, supabaseKey)
+                .setGoTrue(new GoTrue(supabaseUrl, supabaseKey))
+                .setPostgrest(new Postgrest(supabaseUrl, supabaseKey))
+                .setRealtime(new Realtime(supabaseUrl, supabaseKey))
+                .setStorage(new Storage(supabaseUrl, supabaseKey));
+
+        supabase.getGoTrue().setSession(token);
+
 
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
