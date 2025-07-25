@@ -1,6 +1,9 @@
 package com.example.musicapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.media.session.MediaControllerCompat;
+import android.support.v4.media.session.MediaSessionCompat;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
@@ -14,6 +17,8 @@ public class MusicPlayerActivity extends AppCompatActivity {
     private ImageButton nextButton;
     private ImageButton previousButton;
     private SeekBar seekBar;
+    private MediaSessionCompat mediaSession;
+    private MediaControllerCompat mediaController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,24 +30,31 @@ public class MusicPlayerActivity extends AppCompatActivity {
         previousButton = findViewById(R.id.previous_button);
         seekBar = findViewById(R.id.seek_bar);
 
+        mediaSession = new MediaSessionCompat(this, "MusicPlayerActivity");
+        mediaController = new MediaControllerCompat(this, mediaSession.getSessionToken());
+
         playPauseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MusicPlayerActivity.this, "Play/Pause", Toast.LENGTH_SHORT).show();
+                if (mediaController.getPlaybackState().getState() == MediaControllerCompat.PlaybackStateCompat.STATE_PLAYING) {
+                    mediaController.getTransportControls().pause();
+                } else {
+                    mediaController.getTransportControls().play();
+                }
             }
         });
 
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MusicPlayerActivity.this, "Next", Toast.LENGTH_SHORT).show();
+                mediaController.getTransportControls().skipToNext();
             }
         });
 
         previousButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MusicPlayerActivity.this, "Previous", Toast.LENGTH_SHORT).show();
+                mediaController.getTransportControls().skipToPrevious();
             }
         });
 
@@ -50,7 +62,7 @@ public class MusicPlayerActivity extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                 if (fromUser) {
-                    Toast.makeText(MusicPlayerActivity.this, "Seek to " + progress, Toast.LENGTH_SHORT).show();
+                    mediaController.getTransportControls().seekTo(progress);
                 }
             }
 
@@ -62,5 +74,17 @@ public class MusicPlayerActivity extends AppCompatActivity {
             public void onStopTrackingTouch(SeekBar seekBar) {
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        startService(new Intent(this, MusicService.class));
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        stopService(new Intent(this, MusicService.class));
     }
 }

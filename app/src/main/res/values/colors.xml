@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#1DB954</color>
+
+    <color name="background">#111827</color>
+    <color name="foreground">#F9FAFB</color>
+    <color name="card">#1F2937</color>
+    <color name="card_foreground">#F9FAFB</color>
+    <color name="popover">#1F2937</color>
+    <color name="popover_foreground">#F9FAFB</color>
+    <color name="primary">#F9FAFB</color>
+    <color name="primary_foreground">#111827</color>
+    <color name="secondary">#374151</color>
+    <color name="secondary_foreground">#F9FAFB</color>
+    <color name="muted">#374151</color>
+    <color name="muted_foreground">#9CA3AF</color>
+    <color name="accent">#374151</color>
+    <color name="accent_foreground">#F9FAFB</color>
+    <color name="destructive">#991B1B</color>
+    <color name="destructive_foreground">#F9FAFB</color>
+    <color name="border">#374151</color>
+    <color name="input">#374151</color>
+    <color name="ring">#4F46E5</color>
+    <color name="sidebar_background">#111827</color>
+    <color name="sidebar_foreground">#D1D5DB</color>
+    <color name="sidebar_primary">#3B82F6</color>
+    <color name="sidebar_primary_foreground">#F9FAFB</color>
+    <color name="sidebar_accent">#1F2937</color>
+    <color name="sidebar_accent_foreground">#F9FAFB</color>
+    <color name="sidebar_border">#1F2937</color>
+    <color name="sidebar_ring">#3B82F6</color>
 </resources>
