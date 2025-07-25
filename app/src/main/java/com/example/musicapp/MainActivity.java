@@ -12,32 +12,28 @@ import com.example.musicapp.fragments.ProfileFragment;
 import com.example.musicapp.fragments.SearchFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import io.supabase.SupabaseClient;
-import io.supabase.gotrue.GoTrue;
-import io.supabase.postgrest.Postgrest;
-import io.supabase.realtime.Realtime;
-import io.supabase.storage.Storage;
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
-    private SupabaseClient supabase;
+    private String token;
+    private RequestQueue requestQueue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String token = getIntent().getStringExtra("token");
-        String supabaseUrl = "YOUR_SUPABASE_URL";
-        String supabaseKey = "YOUR_SUPABASE_KEY";
-
-        supabase = new SupabaseClient(supabaseUrl, supabaseKey)
-                .setGoTrue(new GoTrue(supabaseUrl, supabaseKey))
-                .setPostgrest(new Postgrest(supabaseUrl, supabaseKey))
-                .setRealtime(new Realtime(supabaseUrl, supabaseKey))
-                .setStorage(new Storage(supabaseUrl, supabaseKey));
-
-        supabase.getGoTrue().setSession(token);
+        token = getIntent().getStringExtra("token");
+        requestQueue = Volley.newRequestQueue(this);
 
 
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
@@ -46,6 +42,19 @@ public class MainActivity extends AppCompatActivity {
         // as soon as the application opens the first fragment should
         // be displayed to the user
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new LibraryFragment()).commit();
+    }
+
+    public void makeSupabaseRequest(String url, Response.Listener<String> listener, Response.ErrorListener errorListener) {
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, listener, errorListener) {
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                Map<String, String> headers = new HashMap<>();
+                headers.put("Authorization", "Bearer " + token);
+                return headers;
+            }
+        };
+
+        requestQueue.add(stringRequest);
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
